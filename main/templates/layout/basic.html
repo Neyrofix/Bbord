@@ -1,4 +1,4 @@
-{% load bootstrap5 %} 
+{% load bootstrap4 %} 
 {% load static %}
 
 <!DOCTYPE html>
@@ -46,10 +46,13 @@
             <a class="nav-link" href="#">Жилье</a>
             <a class="nav-link" href="#">Склады</a>
             <a class="nav-link" href="#">Гаражи</a>
-            <span class="nas-link root font-weight-bold" href="#">Транспорт
+            <span class="nav-link root font-weight-bold" href="#">Транспорт
             </span>
-            <a class="nav-link" href="#"></a>
-            <a class="nav-link" href="#"></a>
+            <a class="nav-link" href="#">Легковой</a>
+            <a class="nav-link" href="#">Грузовой</a>
+            <a class="nav-link root" href="{% url 'main:other' page='about' %}">
+              О сайте
+            </a>
           </nav>
           <section class="col border py-2">
               {% bootstrap_messages %}
